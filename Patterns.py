@@ -34,6 +34,9 @@ def pattern7(n):
     for i in range(n):
         print(' '*(n-i+1)+'*'*(2*i+1))
 
+def pattern8(n):
+    for i in range(n):
+        print(' '*(i)+'*'*((2*n-1)-2*i))
 
 
 
@@ -41,7 +44,7 @@ def __main__():
      t =  int(input())
      for i in range(t):
          n = int(input())
-         pattern7(n)
+         pattern8(n)
 
 if __name__ == "__main__":
     __main__()
