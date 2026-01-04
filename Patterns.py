@@ -46,12 +46,48 @@ def pattern10(n):
         print('*'*(i+1))
     for j in range(n-1):
         print('*'*(n-j-1))
+def pattern11(n):
+     for i in range(n+1):
+        if i%2==0:
+            for j in range(i):
+                print(1, end=' ') if j%2!=0 else print(0, end=' ')
+            print()
+        else:
+            for x in range(i):
+                print(0, end=' ') if x%2!=0 else print(1, end=' ')
+            print()
+def pattern12(n):
+    for i in range(1,n+1):
+        count=0
+        for j in range(1,i+1):
+            print(j, end=' ')
+            count+=1
+        print('  '*(2*(n-i)), end='')
+        for x in range(1, i+1):
+            print(count, end=' ')
+            count-=1
+        print()
+def pattern13(n):
+    for i in range(n+1):
+        for j in range(i):
+            print(chr(65+j), end=' ')
+        print()
+def pattern14(n):
+    for i in range(n+1):
+        for j in range(i,n):
+            print(chr(65+j), end=' ')
+        print()
+def pattern15(n):
+    for i in range(n+1):
+        for j in range(i,n):
+            print(chr(65+j-i), end=' ')
+        print()
 
 def __main__():
      t =  int(input())
      for i in range(t):
          n = int(input())
-         pattern10(n)
+         pattern13(n)
 
 if __name__ == "__main__":
     __main__()
