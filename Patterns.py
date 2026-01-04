@@ -97,6 +97,15 @@ def pattern18(n):
         for j in range(i):
             print(chr(64+n-j), end=' ')
         print()
+def pattern19(n):
+    for i in range(1,n+1):      
+        print("  "*(n-i), end=' ')   # Space
+        for j in range(i):          # Left
+            print(chr(65+j), end=' ')
+        for j in range(i-2,-1,-1):  # Right
+            print(chr(65+j), end=' ')
+        print()
+
 
 def __main__():
      t =  int(input())
