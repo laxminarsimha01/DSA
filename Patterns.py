@@ -82,6 +82,17 @@ def pattern15(n):
         for j in range(i,n):
             print(chr(65+j-i), end=' ')
         print()
+def pattern16(n):
+    count=1
+    for i in range(n+1):
+        for j in range(i):
+            print(count, end=' ')
+            count+=1
+        print()
+def pattern17(n):
+    for i in range(1, n+1):
+        print(chr(64+i)*i)
+
 
 def __main__():
      t =  int(input())
