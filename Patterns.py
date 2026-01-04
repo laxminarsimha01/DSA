@@ -92,13 +92,17 @@ def pattern16(n):
 def pattern17(n):
     for i in range(1, n+1):
         print(chr(64+i)*i)
-
+def pattern18(n):
+    for i in range(n+1):
+        for j in range(i):
+            print(chr(64+n-j), end=' ')
+        print()
 
 def __main__():
      t =  int(input())
      for i in range(t):
          n = int(input())
-         pattern13(n)
+         pattern18(n)
 
 if __name__ == "__main__":
     __main__()
