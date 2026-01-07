@@ -120,7 +120,22 @@ def pattern20(n):
         for x in range(i,0,-1):
             print(x, end=' ')
         print()
+def pattern21(n):
+    for i in range(n, 0, -1):
+        for j in range(i):   # stars
+            print('*', end=' ')
+        print('  '*(2*(n-i)), end='')  # Spaces
+        for x in range(i):  #Stars
+            print('*', end=' ')
+        print()
 
+    for i in range(1, n+1):
+        for j in range(i):   # stars
+            print('*', end=' ')
+        print('  '*(2*(n-i)), end='')  # Spaces
+        for x in range(i):  #Stars
+            print('*', end=' ')
+        print()
 
 def __main__():
      t =  int(input())
